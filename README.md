@@ -2,6 +2,8 @@
 
 Code base for the proof of concept on the Graph of Enterprise Metadata
 
+# <img src="GEM.png" width="600" height="350" /> 
+
 --------------------------------------------------------------------------------------------------------------------
 
 ### Quick Start
