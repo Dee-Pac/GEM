@@ -1,2 +1,5 @@
 # GEM
-Graph of Enterprise Metadata
+* Graph of Enterprise Metadata *
+- Code base for the proof of concept on the 
+
+# 
