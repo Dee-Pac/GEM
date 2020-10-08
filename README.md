@@ -25,8 +25,8 @@ Code base for the proof of concept on the Graph of Enterprise Metadata
 
 * [Contact on Glitter](https://github.com/Dee-Pac/GEM)
 
-### Contributing
-
 --------------------------------------------------------------------------------------------------------------------
+
+### Contributing
 
 * [Please read the contributor guidelines](https://github.com/Dee-Pac/GEM)
