@@ -17,3 +17,16 @@ Code base for the proof of concept on the Graph of Enterprise Metadata
 * [Play with GEM on neo4j](https://github.com/Dee-Pac/GEM)
 
 * [Play with GEM via GraphQL](https://github.com/Dee-Pac/GEM)
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+### Questions
+
+* [Contact on Glitter](https://github.com/Dee-Pac/GEM)
+
+### Contributing
+
+--------------------------------------------------------------------------------------------------------------------
+
+* [Please read the contributor guidelines](https://github.com/Dee-Pac/GEM)
