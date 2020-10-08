@@ -1,17 +1,19 @@
 ### GEM | Graph of Enterprise Metadata 
 
-Code base for the proof of concept on the 
+Code base for the proof of concept on the Graph of Enterprise Metadata
 
-#### Quick Start
+--------------------------------------------------------------------------------------------------------------------
 
-##### Pull the repo
+### Quick Start
 
-##### Start neo4j
+* [Pull the repo](https://github.com/Dee-Pac/GEM)
 
-##### Start GraphQl
+* [Start neo4j](https://github.com/Dee-Pac/GEM)
 
-##### Bootstrap Data in neo4j
+* [Start GraphQl](https://github.com/Dee-Pac/GEM)
 
-##### Play the GEM on neo4j
+* [Bootstrap Data in neo4j](https://github.com/Dee-Pac/GEM)
 
-##### Play with GEM via GraphQL
+* [Play the GEM on neo4j](https://github.com/Dee-Pac/GEM)
+
+* [Play with GEM via GraphQL](https://github.com/Dee-Pac/GEM)
