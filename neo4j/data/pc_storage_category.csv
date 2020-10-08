@@ -1,0 +1,9 @@
+storage_category_id,storage_category
+8,BusinessIntelligence
+4,Document
+6,FileSystem
+3,NoSQL
+7,ObjectStore
+2,RDBMS
+1,Streaming
+5,WebServices

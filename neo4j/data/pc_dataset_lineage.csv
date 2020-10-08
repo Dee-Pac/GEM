@@ -1,0 +1,7 @@
+process,target_storage_system_name,target_dataset,target_column,source_storage_system_name,source_dataset,source_column,transformation
+gsql1,Hive.1,edw.customer_profile,customer_id,Oracle.DB.1,site.user,user_id,user_id
+gsql1,Hive.1,edw.customer_profile,name,Oracle.DB.1,site.user,user_name,user_name
+gsql1,Hive.1,edw.customer_profile,country,Oracle.DB.1,site.user,user_address_country,extract(country)
+gsql1,Hive.1,edw.customer_profile,total_transaction_count,Oracle.DB.2,site.txn,txn_id,count(txn_id)
+gsql1,Hive.1,edw.customer_profile,total_transaction_amt,Oracle.DB.2,site.txn,txn_amt,sum(txn_amt)
+gsql1,Hive.1,edw.customer_profile,total_logins,Kafka.1,user.activity,activity_id,count(activity_id)

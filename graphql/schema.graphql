@@ -1,0 +1,15 @@
+type column {
+   column:String!
+   storage_system_name:String!
+   dataset:String!
+}
+
+type dataset {
+    dataset:String!
+    storage_system_name:String!
+    column: [column] @relation(name:"DATASET_HAS_COLUMN", direction:OUT)
+}
+
+type Enterprise {
+    name:String!
+}

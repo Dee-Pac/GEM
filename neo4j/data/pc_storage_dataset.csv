@@ -1,0 +1,5 @@
+storage_system_name,dataset
+Hive.1,edw.customer_profile
+Oracle.DB.2,site.txn
+Oracle.DB.1,site.user
+Kafka.1,user.activity
