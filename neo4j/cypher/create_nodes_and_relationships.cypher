@@ -311,7 +311,7 @@ CREATE (role_type)-[:HAS_ROLES]->(iam_role);
 
 CREATE (:user {user_name : "#N/A"});
 
-MATCH (n:iam_role)-[r]-(n1) WHERE n.n > 1 DELETE n ,r
+MATCH (n:iam_role)-[r]-(n1) WHERE n.n > 1 DELETE n ,r;
 MATCH ()-[r:USER_OWNS_ROLE]-() DELETE r;
 MATCH ()-[r:ROLE_OWNER_IS_USER]-() DELETE r;
 
@@ -361,6 +361,7 @@ MATCH (p:SQL),(c:CodeBase)
 CREATE
 (p)-[:IS_A_TYPE_OF_CODE]->(c),
 (p)<-[:HAS_CODE_TYPE]-(c)
+;
 
 
 MATCH (p:Process) 
