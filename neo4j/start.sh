@@ -51,10 +51,17 @@ write_log()
 }
 
 
-
+export GEM_NETWORK=gem_net
 export GEM_HOME=$PWD
 export GEM_NEO4J_CONTAINER=gem_neo4j
 export NEO4J_VERSION=4.0.0
+
+write_log "------------------------------------------------------------------------------"
+write_log "Creating docker bridge network ${GEM_NETWORK}"
+write_log "------------------------------------------------------------------------------"
+
+#run_cmd "docker network rm -f ${GEM_NETWORK}"
+run_cmd "docker network create ${GEM_NETWORK}"
 
 write_log "NEO4J Community Edition Docker details can be found here [https://neo4j.com/developer/docker-run-neo4j/]"
 write_log "NEO4J Version [${NEO4J_VERSION}]"
@@ -79,10 +86,14 @@ run_cmd "docker container rm -f ${GEM_NEO4J_CONTAINER}"
 write_log "------------------------------------------------------------------------------"
 write_log "Starting container [${GEM_NEO4J_CONTAINER}]..."
 write_log "------------------------------------------------------------------------------"
+
 run_cmd "docker run \
+    --network ${GEM_NETWORK} \
+    --hostname ${GEM_NEO4J_CONTAINER} \
     --name ${GEM_NEO4J_CONTAINER} \
     -p7474:7474 -p7687:7687 \
     -d \
+    --rm \
     -v ${GEM_HOME}/neo4j/import:/var/lib/neo4j/import \
     -v ${GEM_HOME}/neo4j/logs:/logs \
     -v ${GEM_HOME}/neo4j/plugins:/plugins \
@@ -104,7 +115,7 @@ if [ $container_count -ne 1 ]; then
 else
    write_log "------------------------------------------------------------------------------"
    write_log "Successfully Launched neo4j docker container [${GEM_NEO4J_CONTAINER}]"
-   write_log "Accessing Docker Container : docker exec -it gem_neo4j bash"
+   write_log "Accessing Docker Container : docker exec -it ${GEM_NEO4J_CONTAINER} bash"
    write_log "Accessing Via browser : http://localhost:7474/browser/"
    write_log "neo4j logs : ${GEM_HOME}/neo4j/logs/debug.log"
    write_log "------------------------------------------------------------------------------"
