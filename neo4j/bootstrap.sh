@@ -1,62 +1,18 @@
-#!/bin/bash
+#!/bin/sh
 
-export GEM_HOME=$PWD
-export GEM_NEO4J_CONTAINER=gem_neo4j
+this_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+this_file=`basename $0`
+this_script="$this_dir/$this_file"
+user_args=$@
+user_args_count=$#
 
-#!/bin/bash
+echo ""
+echo "-----------------------------------------------------------------------------------------------"
+echo "-------  Executing [$this_script $user_agrs]  -------"
+echo "-----------------------------------------------------------------------------------------------"
+echo ""
 
-#----------------------------function will check for error code & exit if failure, else proceed further----------------------------#
-
-#usage : check_error <$?> <custom_error_code>
-#Example: Check_error < pass $? from the shell command > < Custom Message for errorcode -gt 0 >
-
-check_error()
-{
-	cmd_error_code=$1
-	custom_message=$2
-	if  [ ${cmd_error_code} -gt 0 ]; then
-	  write_log "Error    | Stage |  ${custom_message}"
-	  # exit ${cmd_error_code}
-	else
-	  write_log "Success  | Stage | ${custom_message}"
-	fi
-}
-
-#-----------------------------------Executes a Command--------------------------------------------------------#
-
-
-
-#Usage : run_cmd < The command to execute > 
-
-run_cmd()
-{
-       cmd=$1
-       if [ -z $2 ]; then 
-         fail_on_error="break_code"
-       else
-         fail_on_error=$2
-       fi 
-       write_log "Executing Command --> $1"
-       $cmd
-       error_code=$?
-       if [ ! $fail_on_error = "ignore_errors" ]; then
-           check_error $error_code "$cmd"
-       fi
-}
-
-#----------------------------function will write the message to Console / Log File----------------------------#
-
-#Usage : write_log < Whatever message you need to log >
-
-write_log()
-{
-        msg=$1
-        to_be_logged="$(date '+%Y-%m-%d %H:%M:%S') | $msg"
-        echo ${to_be_logged}
-}
-
-
-
+source ${GEM_HOME}/set_env.sh >>/dev/null
 
 write_log "------------------------------------------------------------------------------"
 write_log "Checking container availability : [${GEM_NEO4J_CONTAINER}]"

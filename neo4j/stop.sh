@@ -8,43 +8,23 @@ user_args_count=$#
 
 echo ""
 echo "-----------------------------------------------------------------------------------------------"
-echo "-------  SCRIPT [$this_script $user_agrs]  -------"
+echo "-------  Executing [$this_script $user_agrs]  -------"
 echo "-----------------------------------------------------------------------------------------------"
 echo ""
 
 source ${GEM_HOME}/set_env.sh >>/dev/null
 
-run_cmd "${GEM_API_HOME}/stop.sh" "ignore_errors"
-
-run_cmd "${GEM_API_HOME}/build.sh" "ignore_errors"
+write_log "------------------------------------------------------------------------------"
+write_log "Stopping container if already running [${GEM_NEO4J_CONTAINER}]..."
+write_log "------------------------------------------------------------------------------"
+run_cmd "docker stop ${GEM_NEO4J_CONTAINER}" "ignore_errors"
 
 write_log "------------------------------------------------------------------------------"
-write_log "Starting GEM container [${GEM_API_CONTAINER}]..."
+write_log "Removing container if exists [${GEM_NEO4J_CONTAINER}]..."
 write_log "------------------------------------------------------------------------------"
-
-run_cmd "docker run \
-    --network ${GEM_NETWORK} \
-    --hostname ${GEM_API_CONTAINER} \
-    -d \
-    --rm \
-    -p8080:8080 \
-    -p3000:3000 \
-    --name ${GEM_API_CONTAINER} \
-    ${GEM_API_CONTAINER}
-"
+run_cmd "docker container rm -f ${GEM_NEO4J_CONTAINER}" "ignore_errors"
 
 write_log "------------------------------------------------------------------------------"
-write_log "Sleeping for few seconds to start [${GEM_API_CONTAINER}]..."
+write_log "Removing image if exists [${GEM_NEO4J_CONTAINER}]..."
 write_log "------------------------------------------------------------------------------"
-
-sleep 5
-
-container_count=`docker inspect ${GEM_API_CONTAINER} | grep "running" | wc -l`
-if [ $container_count -ne 1 ]; then
-   write_log "Container not found [${GEM_API_CONTAINER}]"
-   write_log "Failed to launch ${GEM_API_CONTAINER}"
-   exit 1
-else
-   echo $API_MESSAGE
-fi
-
+run_cmd "docker image rm -f ${GEM_NEO4J_CONTAINER}" "ignore_errors"

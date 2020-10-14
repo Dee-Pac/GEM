@@ -14,14 +14,11 @@ echo ""
 
 source ${GEM_HOME}/set_env.sh >>/dev/null
 
-cd ${GEM_API_HOME}
-write_log "Present Working Directory : ${PWD}"
-
-run_cmd "${GEM_API_HOME}/stop.sh" "ignore_errors"
-
 write_log "------------------------------------------------------------------------------"
-write_log "Building docker image ... "
+write_log "Cleaning up already existing image and container ... "
 write_log "------------------------------------------------------------------------------"
-run_cmd "docker build -t ${GEM_API_CONTAINER} -f Dockerfile ."
+run_cmd "docker container rm -f ${GEM_API_CONTAINER}" "ignore_errors"
+run_cmd "docker image rm -f ${GEM_API_CONTAINER}" "ignore_errors"
 
 write_log "SUCCESS"
+

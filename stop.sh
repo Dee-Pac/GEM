@@ -12,16 +12,22 @@ echo "-------  Executing [$this_script $user_agrs]  -------"
 echo "-----------------------------------------------------------------------------------------------"
 echo ""
 
+GEM_HOME=$PWD
 source ${GEM_HOME}/set_env.sh >>/dev/null
 
-cd ${GEM_API_HOME}
-write_log "Present Working Directory : ${PWD}"
+write_log "------------------------------------------------------------------------------"
+write_log "Cleaning up already existing image and container ... "
+write_log "------------------------------------------------------------------------------"
+
+run_cmd "${GEM_NEO4J_HOME}/stop.sh" "ignore_errors"
 
 run_cmd "${GEM_API_HOME}/stop.sh" "ignore_errors"
 
 write_log "------------------------------------------------------------------------------"
-write_log "Building docker image ... "
+write_log "Cleaning up networks ... "
 write_log "------------------------------------------------------------------------------"
-run_cmd "docker build -t ${GEM_API_CONTAINER} -f Dockerfile ."
+
+run_cmd "docker network rm ${GEM_NETWORK}" "ignore_errors"
 
 write_log "SUCCESS"
+
