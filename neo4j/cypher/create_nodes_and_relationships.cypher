@@ -382,6 +382,7 @@ MATCH (p:Process),(l:lineage)
 where p.process = l.process
 CREATE 
 (p)-[:HAS_LINEAGE]->(l)
+;
 
 MATCH (p:Process),(l:lineage),(cs:column),(ct:column)
 where p.process = l.process
@@ -394,7 +395,7 @@ and l.target_column = ct.column
 CREATE 
 (ct)-[:HAS_SOURCE]->(cs),
 (cs)-[:HAS_TARGET]->(ct)
-
+;
 
 /*****************************************/
 /* END */
