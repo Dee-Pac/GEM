@@ -7,19 +7,23 @@
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/Dee-Pac/GEM/main)
 
 
+#### View of Enterprise Landscape
 
 # <img src="docs/images/enterprise_view.png" width="600" height="350" />
+
+#### Transformed into Graph of Enterprise Metadata
 
 # <img src="docs/images/GEM.png" width="600" height="350" /> 
 
 
 --------------------------------------------------------------------------------------------------------------------
 
-# NODES2020 Conference
+### NODES2020 Conference
 
-## [Agenda!](https://neo4j.com/nodes-2020/agenda/)
-## [Slides!](https://www.slideshare.net/DeepakMC/graph-of-enterprisemetadata-nodes2020-neo4j-conference)
-## [Raw PDF!](docs/pdfs/NODES2020_Talk.pdf)
+#### [Agenda](https://neo4j.com/nodes-2020/agenda/)
+#### [View in Slideshare](https://www.slideshare.net/DeepakMC/graph-of-enterprisemetadata-nodes2020-neo4j-conference)
+#### [View as PDF](docs/pdfs/NODES2020_Talk.pdf)
+#### [Video Stream](https://www.bigmarker.com/neo4j-event/Mastering-Enterprise-Metadata-with-Neo4j?bmid=116f67e48bad)
 
 
 --------------------------------------------------------------------------------------------------------------------
