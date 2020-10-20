@@ -11,6 +11,11 @@
 
 Code base for the proof of concept on the Graph of Enterprise Metadata
 
+<iframe
+  src="https://www.slideshare.net/DeepakMC/graph-of-enterprisemetadata-nodes2020-neo4j-conference"
+  style="width:100%; height:300px;"
+></iframe>
+
 # <img src="GEM.png" width="600" height="350" /> 
 
 --------------------------------------------------------------------------------------------------------------------
