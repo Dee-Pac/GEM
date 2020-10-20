@@ -13,7 +13,7 @@
 
 #### Transformed into Graph of Enterprise Metadata
 
-# <img src="docs/images/GEM.png" width="600" height="350" /> 
+# <img src="docs/images/GEM.img" width="600" height="350" /> 
 
 
 --------------------------------------------------------------------------------------------------------------------
