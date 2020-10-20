@@ -20,10 +20,10 @@
 
 ### NODES2020 Conference
 
-#### [Agenda](https://neo4j.com/nodes-2020/agenda/)
-#### [View in Slideshare](https://www.slideshare.net/DeepakMC/graph-of-enterprisemetadata-nodes2020-neo4j-conference)
-#### [View as PDF](docs/pdfs/NODES2020_Talk.pdf)
-#### [Video Stream](https://www.bigmarker.com/neo4j-event/Mastering-Enterprise-Metadata-with-Neo4j?bmid=116f67e48bad)
+- #### [Agenda](https://neo4j.com/nodes-2020/agenda/)
+- #### [View in Slideshare](https://www.slideshare.net/DeepakMC/graph-of-enterprisemetadata-nodes2020-neo4j-conference)
+- #### [View as PDF](docs/pdfs/NODES2020_Talk.pdf)
+- #### [Video Stream](https://www.bigmarker.com/neo4j-event/Mastering-Enterprise-Metadata-with-Neo4j?bmid=116f67e48bad)
 
 
 --------------------------------------------------------------------------------------------------------------------
