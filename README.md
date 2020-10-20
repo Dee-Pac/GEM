@@ -7,9 +7,20 @@
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/Dee-Pac/GEM/main)
 
 
-Code base for the proof of concept on the Graph of Enterprise Metadata
 
-# <img src="GEM.png" width="600" height="350" /> 
+# <img src="docs/images/enterprise_view.png" width="600" height="350" />
+
+# <img src="docs/images/GEM.png" width="600" height="350" /> 
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+# NODES2020 Conference
+
+## [Agenda!](https://neo4j.com/nodes-2020/agenda/)
+## [Slides!](https://www.slideshare.net/DeepakMC/graph-of-enterprisemetadata-nodes2020-neo4j-conference)
+## [Raw PDF!](docs/pdfs/NODES2020_Talk.pdf)
+
 
 --------------------------------------------------------------------------------------------------------------------
 
