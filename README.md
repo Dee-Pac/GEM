@@ -9,6 +9,8 @@
 <a href="docs/Graph_of_Enterprise_Metadata_1.pdf" class="image fit"><img src="images/marr_pic.jpg" alt=""></a>
 [Intro.pdf](docs/Graph_of_Enterprise_Metadata_1.pdf)
 
+# <img src="https://www.slideshare.net/DeepakMC/graph-of-enterprisemetadata-nodes2020-neo4j-conference" width="600" height="350" /> 
+
 Code base for the proof of concept on the Graph of Enterprise Metadata
 
 <iframe
