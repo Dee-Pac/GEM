@@ -13,7 +13,7 @@
 
 #### Transformed into Graph of Enterprise Metadata
 
-# <img src="docs/images/GEM.img" width="600" height="350" /> 
+![Alt Text](docs/images/GEM.gif)
 
 
 --------------------------------------------------------------------------------------------------------------------
@@ -122,7 +122,7 @@ gem_net
 
 ### Questions
 
-* [Contact on Gitter](https://github.com/Dee-Pac/GEM)
+* [Contact on Gitter](https://gitter.im/graph_of_enterprise_metadata/GEM-Ask-Us-Anything)
 
 --------------------------------------------------------------------------------------------------------------------
 
