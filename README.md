@@ -1,4 +1,4 @@
-### GEM | Graph of Enterprise Metadata 
+# GEM | Graph of Enterprise Metadata 
 
 [![Join the chat at https://gitter.im/graph_of_enterprise_metadata/GEM-Ask-Us-Anything](https://badges.gitter.im/graph_of_enterprise_metadata/GEM-Ask-Us-Anything.svg)](https://gitter.im/graph_of_enterprise_metadata/GEM-Ask-Us-Anything?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/aeb9cda7171a467894ac9d805252a5d3)](https://app.codacy.com/gh/Dee-Pac/GEM?utm_source=github.com&utm_medium=referral&utm_content=Dee-Pac/GEM&utm_campaign=Badge_Grade)
@@ -6,24 +6,33 @@
 ![GitHub issues](https://img.shields.io/github/issues-raw/Dee-Pac/GEM)
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/Dee-Pac/GEM/main)
 
+# Introduction
 
-#### View of Enterprise Landscape
+Modern enterprises not only have a myriad of data sources, from real-time events, transactional, Big Data, and many other systems, but they also boast a rich ecosystem of thousands of APIs & treasure of deep technical metadata. How do you organize and gain insights from all of this? In addition, there is a trove of data coming from other sources such as millions of datasets, SQL queries, slack chats, thousands user hierarchies, orgs & locations, access controls, Wiki pages, JIRA tickets and more. Normally, these sources are all disconnected from each other, and valuable insights are missed.
 
-# <img src="docs/images/enterprise_view.png" width="600" height="350" />
-
-#### Transformed into Graph of Enterprise Metadata
-
-![Alt Text](docs/images/GEM.gif)
-
+The Graph of Enterprise Metadata is a system that connects and puts all the critical metadata under one umbrella. GEM is built on top of Neo4j and Apache Spark and sports a range of metadata ingestion components. GEM manages a rich graph of entities and connections, it applies graph algorithms for analysis and recommendations. And in the future - GEM would apply ML model to derive insights. These help answer critical questions around data catalog, security, and governance initiatives for systems supporting financial transactions for our 346 millions of users. In addition, we envision this graph of enterprise metadata to empower PayPal at scale & accelerate the journey of reaching 1 Billion Customers.
 
 --------------------------------------------------------------------------------------------------------------------
 
-### NODES2020 Conference
+# GEM overview
 
-- #### [Agenda](https://neo4j.com/nodes-2020/agenda/)
-- #### [View in Slideshare](https://www.slideshare.net/DeepakMC/graph-of-enterprisemetadata-nodes2020-neo4j-conference)
-- #### [View as PDF](docs/pdfs/NODES2020_Talk.pdf)
-- #### [Video Stream](https://www.bigmarker.com/neo4j-event/Mastering-Enterprise-Metadata-with-Neo4j?bmid=116f67e48bad)
+### [2020 - Enterprise Metadata Graph | Nodes Online by NEO4J](https://neo4j.com/nodes-2020/agenda/)
+* [Click here for slideshare](https://www.slideshare.net/DeepakMC/graph-of-enterprisemetadata-nodes2020-neo4j-conference)
+[![Watch the video](docs/images/neo4j_nodes_online_2020.png)](https://youtu.be/m_beM8EuPy8)
+
+### [2020 - Lightning Talk | Metadata Day @ LinkedIn](https://metadataday2020.splashthat.com/)
+[![Watch the video](docs/images/linkedin_metadataday_2020.png)](https://youtu.be/pCuIYK1D9FE)
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+# View of Enterprise Landscape
+
+# <img src="docs/images/enterprise_view.png" width="600" height="350" />
+
+# Transformed into Graph of Enterprise Metadata
+
+![Alt Text](docs/images/GEM.gif)
 
 
 --------------------------------------------------------------------------------------------------------------------
