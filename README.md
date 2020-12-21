@@ -6,6 +6,26 @@
 ![GitHub issues](https://img.shields.io/github/issues-raw/Dee-Pac/GEM)
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/Dee-Pac/GEM/main)
 
+### Introduction
+
+Modern enterprises not only have a myriad of data sources, from real-time events, transactional, Big Data, and many other systems, but they also boast a rich ecosystem of thousands of APIs & treasure of deep technical metadata. How do you organize and gain insights from all of this? In addition, there is a trove of data coming from other sources such as millions of datasets, SQL queries, slack chats, thousands user hierarchies, orgs & locations, access controls, Wiki pages, JIRA tickets and more. Normally, these sources are all disconnected from each other, and valuable insights are missed.
+
+The Graph of Enterprise Metadata is a system that connects and puts all the critical metadata under one umbrella. GEM is built on top of Neo4j and Apache Spark and sports a range of metadata ingestion components. GEM manages a rich graph of entities and connections, it applies graph algorithms for analysis and recommendations. And in the future - GEM would apply ML model to derive insights. These help answer critical questions around data catalog, security, and governance initiatives for systems supporting financial transactions for our 346 millions of users. In addition, we envision this graph of enterprise metadata to empower PayPal at scale & accelerate the journey of reaching 1 Billion Customers.
+
+--------------------------------------------------------------------------------------------------------------------
+
+# Gimel overview
+
+## [2020 - Enterprise Metadata Graph | Nodes Online by NEO4J](https://neo4j.com/nodes-2020/agenda/)
+* [Click here for slideshare](https://www.slideshare.net/DeepakMC/graph-of-enterprisemetadata-nodes2020-neo4j-conference)
+[![Watch the video](nodes_2020.png)](https://youtu.be/m_beM8EuPy8)
+
+## [2020 - Lightning Talk | Metadata Day @ LinkedIn](https://metadataday2020.splashthat.com/)
+* [Click here for slideshare](https://www.slideshare.net/DeepakMC/data-orchestration-2020-alluxio-gimel-240334331)
+[![Watch the video](metadataday_2020.png)]()
+
+--------------------------------------------------------------------------------------------------------------------
+
 
 #### View of Enterprise Landscape
 
@@ -14,6 +34,7 @@
 #### Transformed into Graph of Enterprise Metadata
 
 ![Alt Text](docs/images/GEM.gif)
+
 
 
 --------------------------------------------------------------------------------------------------------------------
