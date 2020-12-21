@@ -14,15 +14,14 @@ The Graph of Enterprise Metadata is a system that connects and puts all the crit
 
 --------------------------------------------------------------------------------------------------------------------
 
-# Gimel overview
+#### GEM overview
 
 ## [2020 - Enterprise Metadata Graph | Nodes Online by NEO4J](https://neo4j.com/nodes-2020/agenda/)
 * [Click here for slideshare](https://www.slideshare.net/DeepakMC/graph-of-enterprisemetadata-nodes2020-neo4j-conference)
 [![Watch the video](nodes_2020.png)](https://youtu.be/m_beM8EuPy8)
 
 ## [2020 - Lightning Talk | Metadata Day @ LinkedIn](https://metadataday2020.splashthat.com/)
-* [Click here for slideshare](https://www.slideshare.net/DeepakMC/data-orchestration-2020-alluxio-gimel-240334331)
-[![Watch the video](metadataday_2020.png)]()
+[![Watch the video](metadataday_2020.png)](https://youtu.be/pCuIYK1D9FE)
 
 --------------------------------------------------------------------------------------------------------------------
 
