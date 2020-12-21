@@ -18,10 +18,10 @@ The Graph of Enterprise Metadata is a system that connects and puts all the crit
 
 ## [2020 - Enterprise Metadata Graph | Nodes Online by NEO4J](https://neo4j.com/nodes-2020/agenda/)
 * [Click here for slideshare](https://www.slideshare.net/DeepakMC/graph-of-enterprisemetadata-nodes2020-neo4j-conference)
-[![Watch the video](nodes_2020.png)](https://youtu.be/m_beM8EuPy8)
+[![Watch the video](docs/images/neo4j_nodes_online_2020.png)](https://youtu.be/m_beM8EuPy8)
 
 ## [2020 - Lightning Talk | Metadata Day @ LinkedIn](https://metadataday2020.splashthat.com/)
-[![Watch the video](metadataday_2020.png)](https://youtu.be/pCuIYK1D9FE)
+[![Watch the video](docs/images/linkedin_metadataday_2020.png)](https://youtu.be/pCuIYK1D9FE)
 
 --------------------------------------------------------------------------------------------------------------------
 
