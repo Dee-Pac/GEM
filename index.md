@@ -1,37 +1,142 @@
-## Welcome to GitHub Pages
+# GEM | Graph of Enterprise Metadata 
 
-You can use the [editor on GitHub](https://github.com/Dee-Pac/GEM/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+[![Join the chat at https://gitter.im/graph_of_enterprise_metadata/GEM-Ask-Us-Anything](https://badges.gitter.im/graph_of_enterprise_metadata/GEM-Ask-Us-Anything.svg)](https://gitter.im/graph_of_enterprise_metadata/GEM-Ask-Us-Anything?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/aeb9cda7171a467894ac9d805252a5d3)](https://app.codacy.com/gh/Dee-Pac/GEM?utm_source=github.com&utm_medium=referral&utm_content=Dee-Pac/GEM&utm_campaign=Badge_Grade)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/Dee-Pac/GEM)
+![GitHub issues](https://img.shields.io/github/issues-raw/Dee-Pac/GEM)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/Dee-Pac/GEM/main)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# Introduction
 
-### Markdown
+Modern enterprises not only have a myriad of data sources, from real-time events, transactional, Big Data, and many other systems, but they also boast a rich ecosystem of thousands of APIs & treasure of deep technical metadata. How do you organize and gain insights from all of this? In addition, there is a trove of data coming from other sources such as millions of datasets, SQL queries, slack chats, thousands user hierarchies, orgs & locations, access controls, Wiki pages, JIRA tickets and more. Normally, these sources are all disconnected from each other, and valuable insights are missed.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The Graph of Enterprise Metadata is a system that connects and puts all the critical metadata under one umbrella. GEM is built on top of Neo4j and Apache Spark and sports a range of metadata ingestion components. GEM manages a rich graph of entities and connections, it applies graph algorithms for analysis and recommendations. And in the future - GEM would apply ML model to derive insights. These help answer critical questions around data catalog, security, and governance initiatives for systems supporting financial transactions for our 346 millions of users. In addition, we envision this graph of enterprise metadata to empower PayPal at scale & accelerate the journey of reaching 1 Billion Customers.
 
-```markdown
-Syntax highlighted code block
+--------------------------------------------------------------------------------------------------------------------
 
-# Header 1
-## Header 2
-### Header 3
+# GEM overview
 
-- Bulleted
-- List
+### [2020 - Enterprise Metadata Graph | Nodes Online by NEO4J](https://neo4j.com/nodes-2020/agenda/)
+* [Click here for slideshare](https://www.slideshare.net/DeepakMC/graph-of-enterprisemetadata-nodes2020-neo4j-conference)
+[![Watch the video](docs/images/neo4j_nodes_online_2020.png)](https://youtu.be/m_beM8EuPy8)
 
-1. Numbered
-2. List
+### [2020 - Lightning Talk | Metadata Day @ LinkedIn](https://metadataday2020.splashthat.com/)
+[![Watch the video](docs/images/linkedin_metadataday_2020.png)](https://youtu.be/pCuIYK1D9FE)
 
-**Bold** and _Italic_ and `Code` text
+--------------------------------------------------------------------------------------------------------------------
 
-[Link](url) and ![Image](src)
+
+# View of Enterprise Landscape
+
+# <img src="docs/images/enterprise_view.png" width="600" height="350" />
+
+# Transformed into Graph of Enterprise Metadata
+
+![Alt Text](docs/images/GEM.gif)
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+### Quick Start
+
+#### Clone the Repo
+```bash
+# Clone the repo
+git clone git@github.com:Dee-Pac/GEM.git
+
+# Open the GEM repo
+cd GEM
+
+# make sure we are on "main" branch
+git checkout origin main
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+#### Start neo4j & GraphQL
+```bash
+# make sure you are in the GEM directory...
 
-### Jekyll Themes
+# Fire-up the stack 
+# - Starts a new docker network
+# - Starts neo4j
+# - bootstraps sample data & model
+# - Starts GraphQL 
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Dee-Pac/GEM/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+sh start.sh
+```
 
-### Support or Contact
+* Following indicates successfull start of the stack
+```
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+***********************************************************************************************
+*                                 Firing Up NEO4J ...                                         *
+***********************************************************************************************
+...
+..
+***********************************************************************************************
+*                          Bootstrapping neo4j with GEM data ...                              *
+***********************************************************************************************
+...
+..
+***********************************************************************************************
+*                                Firing up GraphQL ...                                        *
+***********************************************************************************************
+...
+..
+***********************************************************************************************
+*                     SUCCESS | Starting Graph of Enterprise Metadata                         *
+***********************************************************************************************
+
+---------------------- NEO4J Docker Environment ------------------------------
+Successfully Launched neo4j docker container [gem_neo4j]
+Accessing Docker Container : docker exec -it gem_neo4j bash
+Accessing Via browser : http://localhost:7474/browser/
+neo4j logs : <PATH_TO_REPO>/GEM/neo4j/logs/debug.log
+------------------------------------------------------------------------------
+
+----------------------- GraphQL Docker Environment ---------------------------
+Successfully Launched GraphQL docker container [gem_api]
+Accessing Docker Container : docker exec -it gem_api bash
+Accessing Via browser : http://localhost:3000
+------------------------------------------------------------------------------
+```
+#### Stop neo4j & GraphQL
+```bash
+
+# Stops all the containers, remove the gem docker network.
+
+sh stop.sh
+```
+
+* Following indicates the stack has been cleaned off from the local environment
+```bash
+...
+..
+Stopping container if already running [gem_neo4j]...
+Removing container if exists [gem_neo4j]...
+Removing image if exists [gem_neo4j]...
+Cleaning up already existing image and container [gem_api] ...
+...
+..
+2020-10-20 12:13:11 | ------------------------------------------------------------------------------
+2020-10-20 12:13:11 | Cleaning up networks ...
+2020-10-20 12:13:11 | ------------------------------------------------------------------------------
+2020-10-20 12:13:11 | Executing Command --> docker network rm gem_net
+gem_net
+2020-10-20 12:13:11 | SUCCESS
+```
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+### Questions
+
+* [Contact on Gitter](https://gitter.im/graph_of_enterprise_metadata/GEM-Ask-Us-Anything)
+
+--------------------------------------------------------------------------------------------------------------------
+
+### Contributing
+
+* [Please read the contributor guidelines](https://github.com/Dee-Pac/GEM)
+
+
